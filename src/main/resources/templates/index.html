@@ -21,6 +21,8 @@
         <td th:text="${cliente.apellido}"></td>
         <td th:text="${cliente.email}"></td>
         <td th:text="${cliente.telefono}"></td>
+        <td><a th:href="@{/edit/} + ${cliente.idcliente}" th:text="Editar"/></td>
+        <td><a th:href="@{/delete(idcliente=${cliente.idcliente})}" th:text="Delete"/></td>
     </tr>
 </table>
 </body>
